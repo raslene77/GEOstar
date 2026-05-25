@@ -253,56 +253,56 @@ int main()
 
 
     double M = 1.0;
-    double a = 0.5;
+    double a = 0.9;
     KerrMetric Kerr(M, a);
     double Rs = 2 * M;
 
     vector<StateVector> Bodies(5);
 
     Bodies[0].X[0]=0;
-    Bodies[0].X[1]=6.2;
+    Bodies[0].X[1]=8.0;
     Bodies[0].X[2]=PI/2;
-    Bodies[0].X[3]=0;
-    Bodies[0].X[4]=1.08;
-    Bodies[0].X[5]=0.005;
-    Bodies[0].X[6]=0.020;
-    Bodies[0].X[7]=0.05;
+    Bodies[0].X[3]=0.0;
+    Bodies[0].X[4]=1.15;
+    Bodies[0].X[5]=0.000;
+    Bodies[0].X[6]=0.000;
+    Bodies[0].X[7]=0.045;
 
     Bodies[1].X[0]=0;
-    Bodies[1].X[1]=6.22;
-    Bodies[1].X[2]=PI/3;
-    Bodies[1].X[3]=0.02;
-    Bodies[1].X[4]=1.08;
-    Bodies[1].X[5]=0.006;
-    Bodies[1].X[6]=0.021;
-    Bodies[1].X[7]=0.05;
+    Bodies[1].X[1]=8.1;
+    Bodies[1].X[2]=PI/2 + 0.02;
+    Bodies[1].X[3]=0.2;
+    Bodies[1].X[4]=1.15;
+    Bodies[1].X[5]=0.001;
+    Bodies[1].X[6]=0.000;
+    Bodies[1].X[7]=0.044;
 
     Bodies[2].X[0]=0;
-    Bodies[2].X[1]=6.24;
-    Bodies[2].X[2]=PI/4;
-    Bodies[2].X[3]=0.04;
-    Bodies[2].X[4]=1.08;
-    Bodies[2].X[5]=0.004;
-    Bodies[2].X[6]=0.019;
-    Bodies[2].X[7]=0.05;
+    Bodies[2].X[1]=8.2;
+    Bodies[2].X[2]=PI/2 - 0.02;
+    Bodies[2].X[3]=0.4;
+    Bodies[2].X[4]=1.15;
+    Bodies[2].X[5]=-0.001;
+    Bodies[2].X[6]=0.0005;
+    Bodies[2].X[7]=0.043;
 
     Bodies[3].X[0]=0;
-    Bodies[3].X[1]=6.26;
-    Bodies[3].X[2]=PI/5;
-    Bodies[3].X[3]=0.06;
-    Bodies[3].X[4]=1.08;
-    Bodies[3].X[5]=-0.005;
-    Bodies[3].X[6]=0.022;
-    Bodies[3].X[7]=0.05;
+    Bodies[3].X[1]=8.3;
+    Bodies[3].X[2]=PI/2;
+    Bodies[3].X[3]=0.6;
+    Bodies[3].X[4]=1.15;
+    Bodies[3].X[5]=0.002;
+    Bodies[3].X[6]=-0.0005;
+    Bodies[3].X[7]=0.042;
 
     Bodies[4].X[0]=0;
-    Bodies[4].X[1]=6.28;
-    Bodies[4].X[2]=PI/6;
-    Bodies[4].X[3]=0.08;
-    Bodies[4].X[4]=1.08;
-    Bodies[4].X[5]=0.003;
-    Bodies[4].X[6]=0.018;
-    Bodies[4].X[7]=0.089;
+    Bodies[4].X[1]=8.4;
+    Bodies[4].X[2]=PI/2 + 0.01;
+    Bodies[4].X[3]=0.8;
+    Bodies[4].X[4]=1.15;
+    Bodies[4].X[5]=-0.002;
+    Bodies[4].X[6]=0.001;
+    Bodies[4].X[7]=0.041;
 
     vector<SolverRES> Systems;
     for (auto& b : Bodies)
